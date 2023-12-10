@@ -30,6 +30,7 @@ const City = ({ weatherData }) => {
         source={require('../../assets/city-background.jpg')}
         style={imageLayout}
       >
+      <Text style={styles.teamEtherText}>Team Ether</Text>
         <Text style={[cityName, cityText]}>{name}</Text>
         <Text style={[countryName, cityText]}>{country}</Text>
         <View style={[populationWrapper, rowLayout]}>
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0
   },
   imageLayout: {
-    flex: 1
+    flex: 1,
   },
   cityName: {
     fontSize: 40
@@ -99,6 +100,20 @@ const styles = StyleSheet.create({
   riseSetText: {
     fontSize: 20,
     color: 'white'
+  },
+  teamEtherText: {
+    fontSize: 20,
+    color: 'white',
+    fontWeight: 'bold',
+    position: 'absolute',
+    top: -65,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    zIndex: 1,
+    textShadowColor: 'black',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 1,
   }
 })
 
