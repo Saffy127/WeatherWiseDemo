@@ -16,6 +16,8 @@ To run the demo on your local machine, follow these steps:
 
    cd WeatherWiseDemo
    npm install
+   npm install -g react-native-cli
+   npm install 
    npm install -g expo-cli
    npx expo start --android
 
